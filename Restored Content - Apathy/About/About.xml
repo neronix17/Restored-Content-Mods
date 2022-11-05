@@ -3,7 +3,7 @@
 	<name>Restored Content - Apathy</name>
 	<description>Restores the cut Apathy Genes, generated for each skill, they simply ensure no passion for that skill.</description>
 	<author>Neronix17</author>
-	<packageId>Neronix17.RestoredContent.Passions</packageId>
+	<packageId>Neronix17.RestoredContent.Apathy</packageId>
 	<url>https://www.patreon.com/neronix17</url>
 	<supportedVersions>
 		<li>1.4</li>

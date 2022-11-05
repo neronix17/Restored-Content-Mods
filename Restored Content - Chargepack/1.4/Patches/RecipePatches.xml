@@ -2,9 +2,9 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+		<xpath>/Defs/ThingDef[defName="TableMachining"]/recipes</xpath>
 		<value>
-			<li>Resurrect</li>
+			<li>Make_Chargepack</li>
 		</value>
 	</Operation>
 

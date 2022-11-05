@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedChargepack</defName>
+		<label>unfinished chargepack</label>
+		<description>An unfinished chargepack which is still being crafted.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedChargepack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Chargepack</defName>
+		<label>chargepack</label>
+		<description>A pack of chemical batteries which can be used to recharge mechanoids. Chargepacks can be consumed while caravanning.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Chargepack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<techLevel>Spacer</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>180</wickTicks>
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.05</startWickHitPointsPercent>
+				<drawWick>false</drawWick>
+				<startWickOnInternalDamageTaken>
+					<li>Deterioration</li>
+				</startWickOnInternalDamageTaken>
+			</li>
+			<li Class="CompProperties_DamageOnInterval">
+				<damageDef>Deterioration</damageDef>
+				<damage>1</damage>
+				<ticksBetweenDamage>60</ticksBetweenDamage>
+				<startHitPointsPercent>0.25</startHitPointsPercent>
+				<effectStages>
+					<li>
+						<minHitPointsPercent>9999</minHitPointsPercent>
+						<effecterDef>Power_Cell_Burning</effecterDef>
+					</li>
+					<li>
+						<minHitPointsPercent>0.05</minHitPointsPercent>
+						<effecterDef>Power_Cell_Sparks</effecterDef>
+					</li>
+				</effectStages>
+			</li>
+			<!-- <li Class="CompProperties_EnergyPack">
+				<energyPerPack>100</energyPerPack>
+			</li> -->
+		</comps>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+</Defs>

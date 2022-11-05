@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>ChargepackConsumed</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Pawn/Mechanoid/Chargepack_Consumed</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20</volumeRange>
+				<distRange>10~30</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

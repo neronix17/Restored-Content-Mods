@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneTemplateDef Name="GenePassionBase" Abstract="True">
+	  <geneClass>Gene</geneClass>
+	  <ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+	  <exclusionTagPrefix>Passion</exclusionTagPrefix>
+	  <geneTemplateType>Skill</geneTemplateType>
+	  <displayCategory>Passions</displayCategory>
+	  <selectionWeight>0.2</selectionWeight>
+	</GeneTemplateDef>
+
+	<GeneTemplateDef ParentName="GenePassionBase">
+		<defName>PassionDrop</defName>
+		<label>{0} apathy</label>
+		<description>The carrier will have no passion in {0}.</description>
+		<labelShortAdj>apathetic</labelShortAdj>
+		<iconPath>UI/Icons/Genes/Skills/{0}/PassionDrop</iconPath>
+		<passionModType>DropAll</passionModType>
+		<displayOrderOffset>50</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneTemplateDef>
+
+</Defs>

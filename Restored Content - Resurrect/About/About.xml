@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Restored Content - Resurrect</name>
+	<description>Restores the cut Resurrect Gene and Ability allowing the dead to be brought back by vampires.</description>
+	<author>Neronix17</author>
+	<packageId>Neronix17.RestoredContent.Resurrect</packageId>
+	<url>https://www.patreon.com/neronix17</url>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+</ModMetaData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Restored Content - Addiction Sensitivity</name>
+	<description>Restores the cut Addiction Sensitivity Genes, causing the affected pawns to have increased chance of addiction to a given substance.</description>
+	<author>Neronix17</author>
+	<packageId>Neronix17.RestoredContent.AddictionSensitivity</packageId>
+	<url>https://www.patreon.com/neronix17</url>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+</ModMetaData>

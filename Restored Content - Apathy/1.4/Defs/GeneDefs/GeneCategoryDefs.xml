@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<GeneCategoryDef>
+		<defName>Passions</defName>
+		<label>passions</label>
+		<displayPriorityInXenotype>100</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+</Defs>

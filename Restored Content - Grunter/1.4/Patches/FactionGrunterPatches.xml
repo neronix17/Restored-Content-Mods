@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeRoughNeanderthal"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Grunter>99</Grunter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/warnIfTotalAbove1</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/warnIfTotalAbove1</xpath>
+			<value>
+				<warnIfTotalAbove1>false</warnIfTotalAbove1>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="PirateWaster"]/xenotypeSet</xpath>
+			<value>
+				<warnIfTotalAbove1>false</warnIfTotalAbove1>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Grunter>0.05</Grunter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
+		<value>
+			<Grunter>0.02</Grunter>
+		</value>
+	</Operation>
+
+</Patch>

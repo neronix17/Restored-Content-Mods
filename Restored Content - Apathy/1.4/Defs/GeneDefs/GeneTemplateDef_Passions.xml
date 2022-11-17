@@ -22,4 +22,16 @@
 		<biostatMet>1</biostatMet>
 	</GeneTemplateDef>
 
+	<GeneTemplateDef ParentName="GenePassionBase">
+		<defName>PassionAdd</defName>
+		<label>{0} passion</label>
+		<description>The carrier will have increased passion in {0}. Increases the passion by one, will not go above maximum.</description>
+		<labelShortAdj>passion</labelShortAdj>
+		<iconPath>UI/Icons/Genes/Skills/{0}/PassionAdd</iconPath>
+		<passionModType>AddOneLevel</passionModType>
+		<displayOrderOffset>50</displayOrderOffset>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneTemplateDef>
+
 </Defs>
